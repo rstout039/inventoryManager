@@ -1,0 +1,16 @@
+<h1>This is where you can remove inventory {{this.id}}</h1>
+
+<form data-id="{{this.id}}" class="update-form">
+
+  <div class="form-group">
+    <label for="remove">Remove:</label>
+    <input type="checkbox" id="remove" name="remove" value="{{this.remove}}">
+  </div>
+
+  <div class="form-group">
+    <label for="remove">Remove Inventory:</label>
+    <textarea id="remove" name="remove" rows="8" cols="40">{{this.remove}}</textarea>
+  </div>
+
+  <button type="submit">Remove Inventory</button>
+</form>
