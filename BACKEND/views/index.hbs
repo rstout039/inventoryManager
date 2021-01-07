@@ -1,2 +1,33 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Inventory</h1>
+
+<p>Manage inventory here</p>
+<ul>
+  {{#each inventory}}
+  	<li>
+  		<p><span class="label">Type:</span> {{this.type}}</p>
+      <p><span class="label">Gender:</span> {{this.gender}}</p>
+      <p><span class="label">Size:</span> {{this.size}}</p>
+
+      <button data-id="{{this.type}}" class="delinventory">Delete</button>
+
+      <a href="/{{this.type}}">Add this inventory</a>
+  	</li>
+  {{/each}}
+</ul>
+
+<h2>Add Inventory</h2>
+
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="type">Type:</label>
+    <input type="checkbox" id="type" name="type">
+  </div>
+
+  <div class="form-group">
+    <label for="inv">Inventory:</label>
+    <textarea id="inv" name="inventory" rows="8" cols="40"></textarea>
+  </div>
+
+  <button type="submit">Add Inventory</button>
+</form>
