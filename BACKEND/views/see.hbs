@@ -1,0 +1,16 @@
+<h1>Look at current inventory with {{this.inventory}}</h1>
+
+<form data-id="{{this.inventory}}" class="update-form">
+
+  <div class="form-group">
+    <label for="see">See:</label>
+    <input type="checkbox" id="see" name="see" value="{{this.see}}">
+  </div>
+
+  <div class="form-group">
+    <label for="see">See Inventory:</label>
+    <textarea id="inv" name="inventory" rows="8" cols="40">{{this.see}}</textarea>
+  </div>
+
+  <button type="submit">See Inventory</button>
+</form>
