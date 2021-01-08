@@ -1,0 +1,23 @@
+<h1>Add Inventory</h1>
+<p>This page lets you create new inventory</p>
+<h1>Add different styles of tshirts and hoodies by: {{this.id}} {{this.gender}} {{this.style}} {{this.size}}</h1>
+
+<form data-id="{{this.id}}" class="update-form">
+
+<form class = "form" action = "/" method = "post">
+  <div class = "form-group">
+    <label for = "{{inventory}}">Selection:</label>
+    <input type = "checkbox" class = "form-control" id = "description" placeholder = "Enter preference">
+    </input>
+  </div>
+  <div class = "form-group">
+    <label for = "style">Selection style</label>
+    <select class = "form-control" id = "style">
+      {{this.id}}
+    </select>
+  </div>
+  <button type = "button" class = "btn-btn-default btn-success">
+    Add Inventory
+  </button>
+</form>
+

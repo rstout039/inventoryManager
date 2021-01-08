@@ -1,0 +1,20 @@
+<h2>Remove Inventory</h2>
+<p>This page lets you remove inventory</p><h1>Update the quote with an id of {{this.id}}</h1>
+
+<form data-id="{{this.id}}" class="update-form">
+
+  <div class="panel-panel-default">
+    <h3 class = "panel-title">Remove Inventory<span class = "badge">{{this.id}} {{this.gender}} {{this.style}} {{this.size}}</span></h3>
+  </div>
+  <div class = "panel-body">
+    {{inventory}}
+  </div>
+  <div class = "panel-footer">{{inventory}}</div>
+</div>
+<a href = "/" type = "button" class = "btn-btn-default btn-warning">
+  Edit Inventory
+</a>
+<a type = "button" class = "btn-btn-default btn-danger">
+  Delete Inventory
+</a>
+</form>
